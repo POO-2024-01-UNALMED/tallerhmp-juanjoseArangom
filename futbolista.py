@@ -6,7 +6,7 @@ class Futbolista(Persona, Deportista):
 
     def __init__(self, nombre, edad, altura, sexo, añosPracticando, golesMarcados, tarjetasRojas, piernaHabil) -> None:
         Persona.__init__(nombre, edad, altura, sexo)
-        Deportista.__init__(añosPracticando)
+        Deportista.__init__("Futbol", añosPracticando)
         self._golesMarcados = golesMarcados
         self._tarjetasRojas = tarjetasRojas
         self._piernaHabil = piernaHabil
